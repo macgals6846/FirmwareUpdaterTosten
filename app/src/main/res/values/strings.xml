@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirmwareUpdaterV1.1</string>
+    <string name="display_directory">Browse for Firmware .hex File</string>
+    <string name="button_browse">Browse</string>
+    <string name="button_UpdateFirmware">Update Firmware</string>
+    <string name="hello">AndroidFileBrowserExampleActivity</string>
+</resources>

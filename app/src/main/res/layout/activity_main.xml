@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:hint="@string/display_directory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/display_directory"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:visibility="visible"
+            />
+
+        <Button
+            android:text="@string/button_browse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_browse"
+            android:onClick="browseDirectory"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="SERVER"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <ScrollView android:id="@+id/scroll_server"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:text="IP Address 1: 8080\nIP Address 2: 8080"
+                    android:layout_width="match_parent"
+                    android:id="@+id/textView_server"
+                    android:padding="7dp"
+                    android:gravity="top"
+                    android:layout_height="match_parent"
+                    />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="CLIENT"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/textView4"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <ScrollView android:id="@+id/scroll_client"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:text="IP Address: Port Number\nNot connected"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView_client"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    />
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:text="START SERVER"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_startServer"
+            android:onClick="StartServer"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/button_UpdateFirmware"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button_UpdateFirmware"
+            android:layout_weight="1"
+            android:onClick="UpdateFirmware"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ScrollView android:id="@+id/chat_ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/display_text"
+                android:layout_margin="10dp"
+                android:textSize="10sp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
